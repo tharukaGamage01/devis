@@ -20,264 +20,8 @@
   <link rel="stylesheet" href="assets/css/lightgallery.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+  <link rel="stylesheet" href="assets/css/compact-style.css">
 
-  <style>
-    /* Compact and Clean Website Styling */
-
-    /* Global compact spacing */
-    p {
-      margin-bottom: 8px !important;
-      line-height: 1.6 !important;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin-bottom: 12px !important;
-      line-height: 1.3 !important;
-    }
-
-    img {
-      margin-bottom: 8px !important;
-    }
-
-    /* Compact section spacing */
-    .cs_height_150 {
-      height: 60px !important;
-    }
-
-    .cs_height_141 {
-      height: 60px !important;
-    }
-
-    .cs_height_145 {
-      height: 60px !important;
-    }
-
-    .cs_height_140 {
-      height: 60px !important;
-    }
-
-    .cs_height_80 {
-      height: 40px !important;
-    }
-
-    .cs_height_70 {
-      height: 35px !important;
-    }
-
-    .cs_height_50 {
-      height: 25px !important;
-    }
-
-    .cs_height_45 {
-      height: 25px !important;
-    }
-
-    .cs_height_37 {
-      height: 20px !important;
-    }
-
-    .cs_height_25 {
-      height: 15px !important;
-    }
-
-    .cs_height_16 {
-      height: 10px !important;
-    }
-
-    /* Large screen compact spacing */
-    .cs_height_lg_75 {
-      height: 30px !important;
-    }
-
-    .cs_height_lg_80 {
-      height: 30px !important;
-    }
-
-    .cs_height_lg_72 {
-      height: 30px !important;
-    }
-
-    .cs_height_lg_70 {
-      height: 30px !important;
-    }
-
-    .cs_height_lg_50 {
-      height: 25px !important;
-    }
-
-    .cs_height_lg_37 {
-      height: 20px !important;
-    }
-
-    .cs_height_lg_25 {
-      height: 15px !important;
-    }
-
-    .cs_height_lg_15 {
-      height: 10px !important;
-    }
-
-    /* Section and content spacing */
-    section {
-      padding: 20px 0 !important;
-    }
-
-    .cs_section_heading {
-      margin-bottom: 25px !important;
-    }
-
-    .cs_mb_45 {
-      margin-bottom: 20px !important;
-    }
-
-    .cs_mb_28 {
-      margin-bottom: 15px !important;
-    }
-
-    .cs_mb_25 {
-      margin-bottom: 12px !important;
-    }
-
-    .cs_mb_20 {
-      margin-bottom: 10px !important;
-    }
-
-    .cs_mb_19 {
-      margin-bottom: 10px !important;
-    }
-
-    .cs_mb_18 {
-      margin-bottom: 10px !important;
-    }
-
-    .cs_mb_15 {
-      margin-bottom: 8px !important;
-    }
-
-    .cs_mb_12 {
-      margin-bottom: 8px !important;
-    }
-
-    .cs_mb_5 {
-      margin-bottom: 5px !important;
-    }
-
-    /* Large screen margin adjustments */
-    .cs_mb_lg_15 {
-      margin-bottom: 8px !important;
-    }
-
-    /* Card and content block spacing */
-    .cs_card,
-    .cs_iconbox {
-      margin-bottom: 15px !important;
-    }
-
-    .cs_iconbox_icon {
-      margin-bottom: 15px !important;
-    }
-
-    /* Row gap adjustments */
-    .cs_gap_y_50 {
-      gap: 20px 0 !important;
-    }
-
-    .cs_gap_y_75 {
-      gap: 25px 0 !important;
-    }
-
-    .cs_row_gap_50 {
-      row-gap: 20px !important;
-    }
-
-    /* Container and wrapper spacing */
-    .cs_pr_100 {
-      padding-right: 40px !important;
-    }
-
-    .cs_pr_110 {
-      padding-right: 45px !important;
-    }
-
-    @media only screen and (max-width: 600px) {
-      h3 {
-        font-size: 18px;
-        /* Adjust this value to your preference */
-      }
-
-      /* Even more compact on mobile */
-      .cs_height_150,
-      .cs_height_141,
-      .cs_height_145,
-      .cs_height_140 {
-        height: 30px !important;
-      }
-
-      .cs_height_lg_75,
-      .cs_height_lg_80,
-      .cs_height_lg_72,
-      .cs_height_lg_70 {
-        height: 20px !important;
-      }
-
-      section {
-        padding: 15px 0 !important;
-      }
-
-      .cs_section_heading {
-        margin-bottom: 20px !important;
-      }
-
-      .cs_pr_100,
-      .cs_pr_110 {
-        padding-right: 15px !important;
-      }
-    }
-
-    #whatsapp-icon {
-      position: fixed;
-      bottom: 100px;
-      right: 20px;
-      z-index: 1000;
-      background-color: #93531b;
-      /* Blue background */
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s ease;
-      color: #fff;
-      font-size: 30px;
-    }
-
-    #whatsapp-icon:hover {
-      background-color: #93531b;
-      /* Darker blue on hover */
-    }
-
-    /* Mobile-specific styles */
-    @media only screen and (max-width: 600px) {
-      #whatsapp-icon {
-        bottom: 100px;
-        /* Adjust position for mobile */
-        right: 10px;
-        /* Make it closer to the right edge */
-        width: 50px;
-        /* Smaller icon for mobile */
-        height: 50px;
-        font-size: 24px;
-        /* Adjust font size for icon */
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -286,46 +30,22 @@
     <div class="cs_preloader_in">D</div>
   </div>
   <!-- End Preloader -->
-  <!-- Start Header Section -->
-  <header class="cs_site_header cs_style_1 cs_transparent_header cs_primary_color cs_sticky_header">
-    <div class="cs_main_header">
-      <div class="container">
-        <div class="cs_main_header_in">
-          <div class="cs_main_header_left">
-            <a class="cs_site_branding" href="index.html">
-              <img src="assets/img/12 2.png" alt="Logo" width="135px" height="auto">
-            </a>
-          </div>
-          <div class="cs_main_header_center">
-            <nav class="cs_nav cs_fs_13 cs_semibold">
-              <ul class="cs_nav_list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="rooms.html">Rooms</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="cs_main_header_right">
-            <a href="contact.html" class="cs_btn cs_style_2 cs_medium cs_radius_20 cs_fs_15">
-              Reservation
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- End Header Section -->
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  </script>
+  <div id="header"></div>
 
-  <!-- Start Page Heading Section -->
+
   <section class="cs_page_heading cs_primary_bg cs_bg_filed cs_center" data-src="assets/img/IMG_0525.JPG">
     <div class="container">
       <h1 class="cs_white_color text-center mb-0 cs_fs_67">Contact Us</h1>
     </div>
   </section>
-  <!-- End Page Heading Section -->
+
 
   <!-- Start Contact Section -->
   <section>
@@ -436,101 +156,15 @@
   </div>
   <!-- End Google Map Section -->
 
-  <!-- Start Footer -->
-  <footer class="cs_footer cs_primary_bg cs_ternary_color">
-    <div class="cs_footer_main">
-      <div class="container">
-        <div class="cs_footer_grid_4">
-          <div class="cs_footer_grid_item">
-            <div class="cs_footer_item">
-              <h2 class="cs_widget_title cs_fs_28 cs_white_color"><span>Contact Us</span></h2>
-              <ul class="cs_menu_widget cs_mp0">
-                <li class="cs_white_color">Call : <a href="tel:+61412108801">+61 412 108 801</a></li>
-                <li class="cs_white_color">Email : <a
-                    href="mailto:info@devitranquilvilla.com">villadeviukuwela@gmail.com</a></li>
-                <li>We are open 9 a.m. - 5 p.m. Daily</li>
-              </ul>
-              <div class="cs_social_btns cs_style_1">
-                <a href="#" class="cs_center">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="#" class="cs_center">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="#" class="cs_center">
-                  <i class="fa-brands fa-youtube"></i>
-                </a>
-                <a href="#" class="cs_center">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="cs_footer_grid_item">
-            <div class="cs_footer_item">
-              <h2 class="cs_widget_title cs_fs_28 cs_white_color"><span>Address</span></h2>
-              <div class="cs_text_widget">
-                <p>Nuwara Wallawwa,<br> Ukuwela, Matale,<br> Sri Lanka</p>
-              </div>
-            </div>
-          </div>
-          <div class="cs_footer_grid_item">
-            <div class="cs_footer_item">
-              <h2 class="cs_widget_title cs_fs_28 cs_white_color"><span>Links</span></h2>
-              <ul class="cs_menu_widget cs_mp0">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Reservations</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+  <div id="footer"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
 
-              </ul>
-            </div>
-          </div>
-          <div class="cs_footer_grid_item">
-            <div class="cs_footer_item">
-              <h2 class="cs_widget_title cs_fs_28 cs_white_color"><span>Map Location</span></h2>
-              <div class="cs_footer_map cs_primary_bg">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7912.754712713308!2d80.62657534131044!3d7.42342407034831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3435524b92c69%3A0x1af2f323750f885f!2sUkuwela!5e0!3m2!1sen!2slk!4v1731210759030!5m2!1sen!2slk"
-                  allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cs_bottom_footer_wrap">
-      <div class="container">
-        <div class="cs_bottom_footer position-relative">
-          <div class="cs_copyright">Devi Tranquil Villa Copyright © <span class="cs_copyright_year">2024</span> <a
-              href="#"></a></div>
-          <span class="cs_scrollup cs_center">
-            <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M15 6.18793L14.1169 7L7.93687 1.31723C7.81958 1.20941 7.66053 1.14885 7.49468 1.14885C7.32884 1.14885 7.16978 1.20941 7.0525 1.31723L0.884376 6.99022L0 6.177L6.16812 0.505163C6.51998 0.181708 6.99715 0 7.49468 0C7.99222 0 8.46938 0.181708 8.82125 0.505163L15 6.18793Z"
-                fill="white" />
-            </svg>
-            <span class="cs_scrollup_bg_dotted cs_accent_color">
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="28" cy="28" r="27.5" stroke="currentColor" stroke-dasharray="5 5" />
-              </svg>
-            </span>
-          </span>
-          <div class="cs_bottom_footer_right">
-            <ul class="cs_footer_links cs_mp_0">
-              <li>
-                <a href="#">Privacy & Cookie Policy</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- End Footer -->
   <a href="https://wa.me/61412108801?text=Hello%2C%20I%20have%20a%20query%20about%20your%20services" id="whatsapp-icon"
     target="_blank" title="Contact us on WhatsApp">
     <i class="fab fa-whatsapp"></i>
