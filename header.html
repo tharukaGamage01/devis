@@ -20,6 +20,10 @@
                         </ul>
                     </nav>
                 </div>
+                <button class="cs_nav_toggle" aria-label="Toggle navigation"
+                    style="display:none; position:absolute; top:18px; right:18px;">
+                    <span style="font-size:28px;line-height:1;">&#9776;</span>
+                </button>
                 <div class="cs_main_header_right">
                     <a href="contact.html" class="cs_btn cs_style_2 cs_medium cs_radius_20 cs_fs_15">
                         Reservation
@@ -29,3 +33,134 @@
         </div>
     </div>
 </header>
+<script>
+    // Mobile nav toggle
+    document.addEventListener('DOMContentLoaded', function () {
+        var navToggle = document.querySelector('.cs_nav_toggle');
+        var navList = document.querySelector('.cs_nav_list');
+        function checkMobile() {
+            if (window.innerWidth <= 768) {
+                navToggle.style.display = 'inline-block';
+                navList.style.display = 'none';
+                navToggle.style.position = 'absolute';
+                navToggle.style.top = '18px';
+                navToggle.style.right = '18px';
+            } else {
+                navToggle.style.display = 'none';
+                navList.style.display = 'flex';
+                navToggle.style.position = '';
+                navToggle.style.top = '';
+                navToggle.style.right = '';
+            }
+        }
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        navToggle.addEventListener('click', function () {
+            if (navList.style.display === 'none') {
+                navList.style.display = 'block';
+            } else {
+                navList.style.display = 'none';
+            }
+        });
+    });
+</script>
+<style>
+    @media (max-width: 768px) {
+        .cs_nav_list {
+            flex-direction: column;
+            background: #fff;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            z-index: 9999;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cs_nav_list li {
+            margin: 0;
+            border-bottom: 1px solid #eee;
+            padding: 12px 20px;
+        }
+
+        .cs_nav_toggle {
+            background: none;
+            border: none;
+            color: #333;
+            cursor: pointer;
+            font-size: 28px;
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            z-index: 10000;
+        }
+
+        .cs_main_header_in {
+            position: relative;
+        }
+    }
+</style>
+<script>
+    // Mobile nav toggle
+    document.addEventListener('DOMContentLoaded', function () {
+        var navToggle = document.querySelector('.cs_nav_toggle');
+        var navList = document.querySelector('.cs_nav_list');
+        function checkMobile() {
+            if (window.innerWidth <= 768) {
+                navToggle.style.display = 'inline-block';
+                navList.style.display = 'none';
+            } else {
+                navToggle.style.display = 'none';
+                navList.style.display = 'flex';
+            }
+        }
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        navToggle.addEventListener('click', function () {
+            if (navList.style.display === 'none') {
+                navList.style.display = 'block';
+            } else {
+                navList.style.display = 'none';
+            }
+        });
+    });
+</script>
+<style>
+    @media (max-width: 768px) {
+        .cs_nav_list {
+            flex-direction: column;
+            background: #fff;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            z-index: 9999;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cs_nav_list li {
+            margin: 0;
+            border-bottom: 1px solid #eee;
+            padding: 12px 20px;
+        }
+
+        .cs_nav_toggle {
+            background: none;
+            border: none;
+            color: #333;
+            cursor: pointer;
+            font-size: 28px;
+            margin-right: 10px;
+            position: relative;
+            z-index: 10000;
+        }
+
+        .cs_main_header_center {
+            position: relative;
+        }
+    }
+</style>
